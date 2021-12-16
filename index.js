@@ -11,7 +11,7 @@ var rollbar = new Rollbar({
 let students = []
 
 const app = express()
-
+app.use(express.json())
 
 
 app.get("/",(req,res)=>{
